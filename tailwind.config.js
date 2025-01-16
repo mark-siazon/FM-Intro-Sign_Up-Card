@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'desktop-bg': "url('./src/assets/bg-intro-desktop.png')",
+        'mobile-bg': "url('./src/assets/bg-intro-mobile.png')",
+      },
       colors: {
         primary: {
           red: 'hsl(0, 100%, 74%)',
@@ -30,5 +34,16 @@ export default {
       },
     },
   },
-  plugins: [],
-}
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.font-synthesis-none': {
+          'font-synthesis': 'none',
+        },
+        '.text-rendering-optimize': {
+          'text-rendering': 'optimizeLegibility',
+        },
+      });
+    },
+  ],
+};
