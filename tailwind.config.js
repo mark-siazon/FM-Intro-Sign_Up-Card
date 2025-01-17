@@ -17,6 +17,7 @@ export default {
         },
         accent: {
           blue: 'hsl(248, 32%, 49%)',
+          darkgreen: 'hsl(154, 59%, 47%)',
         },
         neutral: {
           darkBlue: 'hsl(249, 10%, 26%)',
