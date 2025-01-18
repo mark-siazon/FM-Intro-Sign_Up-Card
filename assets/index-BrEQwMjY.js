@@ -46,7 +46,7 @@ Error generating stack: `+u.message+`
       `,children:z.jsxs("p",{children:[z.jsx("span",{className:"font-bold",children:O})," ",S]})}),Ll=({placeholder:S,inputType:O,value:m,onChange:se,name:I,error:U})=>z.jsxs("div",{className:"relative flex flex-col items-center mb-4 transition-300",children:[z.jsx("input",{className:`h-[56px] w-full xs:max-w- px-4 py-1 rounded-md tracking-wide
                     bg-transparent border-2 transition-300 focus:outline-none focus:ring-2 focus:ring-accent-blue
                     hover:border-accent-blue/50 hover:placeholder:text-accent-blue/80
-                    ${U?"border-primary-red":"border-[#E0E0E0]"}`,type:O,id:I,name:I,value:m,placeholder:S,onChange:se}),U&&z.jsx("span",{className:"text-xs italic text-primary-red text-right mt-1 w-full ",children:U}),U&&z.jsx("img",{className:"absolute right-3 top-[22.5%]",src:"src/assets/icon-error.svg",alt:`Error icon telling: ${U}`})]}),Hf=({placeholder:S})=>z.jsx("div",{className:`flex flex-col items-center mb-4 relative \r
+                    ${U?"border-primary-red":"border-[#E0E0E0]"}`,type:O,id:I,name:I,value:m,placeholder:S,onChange:se}),U&&z.jsx("span",{className:"text-xs italic text-primary-red text-right mt-1 w-full ",children:U}),U&&z.jsx("img",{className:"absolute right-3 top-[22.5%]",src:"/icon-error.svg",alt:`Error icon telling: ${U}`})]}),Hf=({placeholder:S})=>z.jsx("div",{className:`flex flex-col items-center mb-4 relative \r
     border-accent-darkgreen border-2 rounded-md box-border transition-300\r
     bg-primary-green hover:bg-accent-darkgreen text-white`,children:z.jsx("input",{className:`h-[56px] w-full rounded-md
           focus:outline-none focus:ring-4 focus:ring-accent-darkgreen focus:border-accent-darkgreen 
