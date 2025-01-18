@@ -3,6 +3,8 @@ import FormInputField from "../components/FormInputField";
 import FormInputSubmitBtn from "./FormInputSubmitBtn";
 import FormModal from "../components/FormModal";
 import { useFormState } from "../hooks/FormState";
+import { useState } from "react";
+import TermsModal from "../components/TermsModal";
 
 const RightContainer: React.FC = () => {
   const {
@@ -13,6 +15,15 @@ const RightContainer: React.FC = () => {
     isModalOpen,
     closeModal,
   } = useFormState();
+
+  const [isTermsModalOpen, setIsTermsModalOpen] = useState(false);
+
+  const openTermsModal = () => {
+    setIsTermsModalOpen(true);
+  };
+  const closeTermsModal = () => {
+    setIsTermsModalOpen(false);
+  };
 
   return (
     <div className="flex flex-auto flex-col max-h-[568px] mb-16 lg:mb-0 transition-300">
@@ -65,14 +76,14 @@ const RightContainer: React.FC = () => {
           <a
             className="font-bold cursor-pointer text-primary-red 
             hover:text-accent-blue hover:underline focus:text-accent-blue transition-300"
-            href="http://"
+            onClick={openTermsModal}
           >
             Terms and Services
           </a>
         </p>
       </form>
 
-      {/* Modal */}
+      {/* Main Form Modal */}
       <FormModal
         isOpen={isModalOpen}
         onClose={closeModal}
@@ -82,6 +93,9 @@ const RightContainer: React.FC = () => {
           email: formData.email,
         }}
       />
+
+      {/* Terms and Services Modal */}
+      <TermsModal isOpen={isTermsModalOpen} onClose={closeTermsModal} />
     </div>
   );
 };
