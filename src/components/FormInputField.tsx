@@ -41,7 +41,7 @@ const FormInputField: React.FC<FormInputFieldProps> = ({
       {error && (
         <img
           className="absolute right-3 top-[22.5%]"
-          src="src/assets/icon-error.svg"
+          src="/icon-error.svg"
           alt={`Error icon telling: ${error}`}
         />
       )}
