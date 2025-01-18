@@ -1,13 +1,32 @@
 import PricingCard from "../components/PricingCard";
 import FormInputField from "../components/FormInputField";
 import FormInputSubmitBtn from "./FormInputSubmitBtn";
+import FormModal from "../components/FormModal";
 import { useFormState } from "../hooks/FormState";
+import { useState } from "react";
+import TermsModal from "../components/TermsModal";
 
 const RightContainer: React.FC = () => {
-  const { formData, errors, handleInputChange, handleSubmit } = useFormState();
+  const {
+    formData,
+    errors,
+    handleInputChange,
+    handleSubmit,
+    isModalOpen,
+    closeModal,
+  } = useFormState();
+
+  const [isTermsModalOpen, setIsTermsModalOpen] = useState(false);
+
+  const openTermsModal = () => {
+    setIsTermsModalOpen(true);
+  };
+  const closeTermsModal = () => {
+    setIsTermsModalOpen(false);
+  };
 
   return (
-    <div className="flex flex-auto flex-col max-h-[568px] mb-16">
+    <div className="flex flex-auto flex-col max-h-[568px] mb-16 lg:mb-0 transition-300">
       <PricingCard
         highlights="Try it free "
         description="7 days then $20/mo. thereafter"
@@ -55,13 +74,28 @@ const RightContainer: React.FC = () => {
         <p className="text-xs">
           by clicking the button, you are agreeing to our{" "}
           <a
-            className="font-bold cursor-pointer text-primary-red hover:text-accent-blue focus:text-accent-blue transistion-all duration-300 ease-in"
-            href="http://"
+            className="font-bold cursor-pointer text-primary-red 
+            hover:text-accent-blue hover:underline focus:text-accent-blue transition-300"
+            onClick={openTermsModal}
           >
             Terms and Services
           </a>
         </p>
       </form>
+
+      {/* Main Form Modal */}
+      <FormModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        formData={{
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+        }}
+      />
+
+      {/* Terms and Services Modal */}
+      <TermsModal isOpen={isTermsModalOpen} onClose={closeTermsModal} />
     </div>
   );
 };
