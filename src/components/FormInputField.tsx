@@ -18,8 +18,8 @@ const FormInputField: React.FC<FormInputFieldProps> = ({
   return (
     <div className="flex flex-col items-center mb-4 relative">
       <input
-        className="h-[56px] w-full max-w-[279px] px-4 py-1 rounded-[4px] tracking-wide
-          bg-transparent border-2 border-[#E0E0E0] transition-all duration-500 ease-out
+        className="h-[56px] w-full max-w-[279px] px-4 py-1 rounded-md tracking-wide
+          bg-transparent border-2 border-[#E0E0E0] transition-300
           focus:outline-none focus:ring-2 focus:ring-accent-blue focus:border-accent-blue hover:border-accent-blue/50"
         type={inputType}
         id={name}
@@ -29,19 +29,19 @@ const FormInputField: React.FC<FormInputFieldProps> = ({
         onChange={onChange}
       />
 
-      {/* Error message with smooth transition */}
+      {/* Error Message */}
       {error && (
-        <span className="text-xs italic text-primary-red mt-1 w-full max-w-[279px] text-right transition-opacity duration-300 ease-in opacity-100">
+        <span className="text-xs italic text-primary-red mt-1 w-full max-w-[279px] text-right">
           {error}
         </span>
       )}
 
-      {/* Error icon with smooth transition */}
+      {/* Error Icon */}
       {error && (
         <img
-          className="absolute right-3 top-[22.5%] transition-all duration-300 ease-in opacity-100"
+          className="absolute right-3 top-[22.5%]"
           src="src/assets/icon-error.svg"
-          alt="Error icon"
+          alt={`Error icon telling: ${error}`}
         />
       )}
     </div>

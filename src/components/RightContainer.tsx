@@ -55,7 +55,8 @@ const RightContainer: React.FC = () => {
         <p className="text-xs">
           by clicking the button, you are agreeing to our{" "}
           <a
-            className="font-bold cursor-pointer text-primary-red hover:text-accent-blue focus:text-accent-blue transistion-all duration-300 ease-in"
+            className="font-bold cursor-pointer text-primary-red 
+            hover:text-accent-blue hover:underline focus:text-accent-blue transition-300"
             href="http://"
           >
             Terms and Services

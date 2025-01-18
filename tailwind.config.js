@@ -33,6 +33,9 @@ export default {
       boxShadow: {
         custom: '0px 6px 12px 1px #C2D3FF',
       },
+      rounded: {
+        md: '6px',
+      },
     },
   },
   plugins: [
