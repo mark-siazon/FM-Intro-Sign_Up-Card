@@ -6,8 +6,8 @@ import RightContainer from "./components/RightContainer";
 const App: React.FC = () => {
   return (
     <div
-      className="container mx-auto
-                min-w-[300px]   max-w-[280px] sm:max-w-[327px]
+      className="container mx-auto min-w-[300px] w-[85vw] flex flex-col lg:flex-row md:gap-6 lg:gap-8 lg:items-center
+                  max-w-[280px] xs:max-w-[350px] sm:max-w-[540px] lg:max-w-[900px]
     "
     >
       <LeftContainer />

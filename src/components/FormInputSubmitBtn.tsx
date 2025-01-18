@@ -11,7 +11,7 @@ const FormInputSubmitBtn: React.FC<FormInputSubmitBtn> = ({ placeholder }) => {
     >
       {/* Submit Button */}
       <input
-        className={`h-[56px] w-full max-w-[279px] rounded-md
+        className={`h-[56px] w-full rounded-md
           focus:outline-none focus:ring-4 focus:ring-accent-darkgreen focus:border-accent-darkgreen 
           transition-300 font-semibold cursor-pointer tracking-wide`}
         type="submit"

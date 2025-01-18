@@ -7,7 +7,7 @@ const RightContainer: React.FC = () => {
   const { formData, errors, handleInputChange, handleSubmit } = useFormState();
 
   return (
-    <div className="flex flex-auto flex-col max-h-[568px] mb-16">
+    <div className="flex flex-auto flex-col max-h-[568px] mb-16 lg:mb-0">
       <PricingCard
         highlights="Try it free "
         description="7 days then $20/mo. thereafter"

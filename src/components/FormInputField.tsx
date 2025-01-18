@@ -16,11 +16,12 @@ const FormInputField: React.FC<FormInputFieldProps> = ({
   error,
 }) => {
   return (
-    <div className="flex flex-col items-center mb-4 relative">
+    <div className="relative flex flex-col items-center mb-4">
       <input
-        className="h-[56px] w-full max-w-[279px] px-4 py-1 rounded-md tracking-wide
-          bg-transparent border-2 border-[#E0E0E0] transition-300
-          focus:outline-none focus:ring-2 focus:ring-accent-blue focus:border-accent-blue hover:border-accent-blue/50"
+        className="h-[56px] w-full xs:max-w- px-4 py-1 rounded-md tracking-wide
+                    bg-transparent border-2 border-[#E0E0E0] transition-300
+                    focus:outline-none focus:ring-2 focus:ring-accent-blue focus:border-accent-blue 
+                    hover:border-accent-blue/50 hover:placeholder:text-accent-blue/80"
         type={inputType}
         id={name}
         name={name}
@@ -31,7 +32,7 @@ const FormInputField: React.FC<FormInputFieldProps> = ({
 
       {/* Error Message */}
       {error && (
-        <span className="text-xs italic text-primary-red mt-1 w-full max-w-[279px] text-right">
+        <span className="text-xs italic text-primary-red text-right mt-1 w-full ">
           {error}
         </span>
       )}
