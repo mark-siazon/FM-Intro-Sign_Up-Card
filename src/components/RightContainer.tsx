@@ -1,13 +1,21 @@
 import PricingCard from "../components/PricingCard";
 import FormInputField from "../components/FormInputField";
 import FormInputSubmitBtn from "./FormInputSubmitBtn";
+import FormModal from "../components/FormModal";
 import { useFormState } from "../hooks/FormState";
 
 const RightContainer: React.FC = () => {
-  const { formData, errors, handleInputChange, handleSubmit } = useFormState();
+  const {
+    formData,
+    errors,
+    handleInputChange,
+    handleSubmit,
+    isModalOpen,
+    closeModal,
+  } = useFormState();
 
   return (
-    <div className="flex flex-auto flex-col max-h-[568px] mb-16 lg:mb-0">
+    <div className="flex flex-auto flex-col max-h-[568px] mb-16 lg:mb-0 transition-300">
       <PricingCard
         highlights="Try it free "
         description="7 days then $20/mo. thereafter"
@@ -63,6 +71,17 @@ const RightContainer: React.FC = () => {
           </a>
         </p>
       </form>
+
+      {/* Modal */}
+      <FormModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        formData={{
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+        }}
+      />
     </div>
   );
 };

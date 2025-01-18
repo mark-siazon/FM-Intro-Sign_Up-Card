@@ -16,12 +16,12 @@ const FormInputField: React.FC<FormInputFieldProps> = ({
   error,
 }) => {
   return (
-    <div className="relative flex flex-col items-center mb-4">
+    <div className="relative flex flex-col items-center mb-4 transition-300">
       <input
-        className="h-[56px] w-full xs:max-w- px-4 py-1 rounded-md tracking-wide
-                    bg-transparent border-2 border-[#E0E0E0] transition-300
-                    focus:outline-none focus:ring-2 focus:ring-accent-blue focus:border-accent-blue 
-                    hover:border-accent-blue/50 hover:placeholder:text-accent-blue/80"
+        className={`h-[56px] w-full xs:max-w- px-4 py-1 rounded-md tracking-wide
+                    bg-transparent border-2 transition-300 focus:outline-none focus:ring-2 focus:ring-accent-blue
+                    hover:border-accent-blue/50 hover:placeholder:text-accent-blue/80
+                    ${error ? "border-primary-red" : "border-[#E0E0E0]"}`}
         type={inputType}
         id={name}
         name={name}
