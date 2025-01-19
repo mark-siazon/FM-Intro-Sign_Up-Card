@@ -4,14 +4,6 @@
 
 :root {
   font-family: Poppins, system-ui, sans-serif;
-  /* color-scheme: light dark; */
-  /* color: rgba(255, 255, 255, 0.87); */
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    /* color: #213547; */
-  }
 }
 
 @layer utilities {

@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'desktop-bg': "url('./src/assets/bg-intro-desktop.png')",
-        'mobile-bg': "url('./src/assets/bg-intro-mobile.png')",
+        'desktop-bg': "url('/bg-intro-desktop.png')",
+        'mobile-bg': "url('/bg-intro-mobile.png')",
       },
       colors: {
         primary: {
