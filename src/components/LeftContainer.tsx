@@ -2,7 +2,7 @@ const LeftContainer: React.FC = () => {
   return (
     <header
       className="flex flex-auto flex-col text-white gap-[18px] text-center lg:text-left
-                min-h-[210px] lg:max-w-[367px]
+                min-h-[210px] lg:max-w-[367px] xl:max-w-[580px]
                 pt-20 sm:pt-24 mb-12 lg:p-0 lg:m-0
     "
     >

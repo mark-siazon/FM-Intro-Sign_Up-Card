@@ -26,7 +26,7 @@ const RightContainer: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-auto flex-col max-h-[568px] mb-16 lg:mb-0 transition-300">
+    <div className="flex flex-auto flex-col max-h-[568px] mb-16 lg:mb-0 transition-300 ">
       <PricingCard
         highlights="Try it free "
         description="7 days then $20/mo. thereafter"
@@ -71,7 +71,7 @@ const RightContainer: React.FC = () => {
 
         <FormInputSubmitBtn placeholder={"CLAIM YOUR FREE TRIAL"} />
 
-        <p className="text-xs">
+        <p className="text-xs text-neutral-grayishBlue">
           by clicking the button, you are agreeing to our{" "}
           <a
             className="font-bold cursor-pointer text-primary-red 
