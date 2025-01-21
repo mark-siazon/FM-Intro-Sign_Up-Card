@@ -32,23 +32,23 @@ Users should be able to:
 
 <br>
 
-Preview of initial design:
-![Design preview for the _Project_Title_ challenge](./src/assets/design/desktop-preview.jpg)
-
 ### Screenshots:
 
 <div align="center">
-| Fullscreen View (Desktop)                          |
+
+**Preview of initial original design (Expected result):**
+| -------------------------------------------- |
+| ![](./src/assets/design/desktop-preview.jpg) |
+
+<br>
+  
+**Fullscreen View (Desktop)**
 | -------------------------------------------------- |
 | ![](./src/assets/design-finished/0.1-Original.jpg) |
 
 **Animated Preview:**
 | -------------------------------------------------------- |
 | ![](./src/assets/design-finished/0.3-animatedResult.gif) |
-<br>
-
-**Note: This is a Mobile-First Approach & Wait for the GIF to load**
-
 <br>
 
 All viewports were included (except for the 4k view), in case the observer wishes to see the minor changes.
@@ -105,10 +105,12 @@ Recap over some of the major learnings while working through this project:
 
 ## Author:
 
-- **Github**: [@Iron-Mark](https://github.com/Iron-Mark)
-- **Github**: [@Mark-Siazon](https://github.com/Mark-Siazon)
-- **Frontend Mentor**: [@Iron-Mark](https://www.frontendmentor.io/profile/Iron-Mark)
-- **LinkedIn**: [@Mark Siazon](https://www.linkedin.com/in/mark-s-6024481b2/)
+- <a href="https://github.com/iron-mark"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge&label=GitHub @iron-mark" alt="GitHub @iron-mark"/></a>‎ ‎ ‎ ‎ ‎ ‎ <a href="https://github.com/mark-siazon"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge&label=GitHub @mark-siazon" alt="GitHub @mark-siazon"/></a>
+- <a href="https://https://www.linkedin.com/in/mark-s-6024481b2/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&label=Let's connect at LinkedIn" alt="Let's connect at LinkedIn"/></a>‎ ‎ ‎ ‎ ‎ ‎ <a href="mailto:marka.siazon@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white&style=for-the-badge&label=Send me a message via Email" alt="Send me a message via Email"/></a>
+- <a href="https://www.frontendmentor.io/profile/Iron-Mark"><img src="https://img.shields.io/badge/Frontend%20Mentor-3A0DCC?logo=FrontendMentor&logoColor=white&style=for-the-badge&label=Take a look at my Frontend Mentor profile" alt="Take a look at my Frontend Mentor profile"/></a>
+- <a href="https://www.tiktok.com/@iron_markk"><img src="https://img.shields.io/badge/TikTok-000000?logo=tiktok&logoColor=white&style=for-the-badge&label=Stay updated by following my TikTok" alt="Stay updated by following my TikTok"/></a>
+
+<br>
 
 - _Updated_: MM/DD/YYYY
-  _(The assets used in this project are originally from Frontend Mentor)_
+- _(The assets used in this project are originally from Frontend Mentor)_
