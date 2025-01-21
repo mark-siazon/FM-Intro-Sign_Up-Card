@@ -118,5 +118,5 @@ Recap over some of the major learnings while working through this project:
 
 <br>
 
-- _Updated_: MM/DD/YYYY
+- _Updated_: 01/22/2025
 - _(The assets used in this project are originally from Frontend Mentor)_
