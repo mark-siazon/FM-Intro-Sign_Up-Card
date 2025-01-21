@@ -1,6 +1,6 @@
-# Frontend Mentor - Intro component with sign-up form
+# Frontend Mentor - _Project_Title_
 
-This is a solution to the [Intro component with sign-up form coding challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1).
+This is a solution to the [_Project_Title_ coding challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/__Placeholder-Text__).
 
 Frontend Mentor challenges help improve skills by building realistic projects.
 
@@ -19,18 +19,16 @@ This section provides quick links to important sections of the README:
 
 ## Overview:
 
-This project is part of the [Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1) challenge. The goal of the challenge is to replicate a design and build a functional web page with specific features.
+This project is part of the [Frontend Mentor](https://www.frontendmentor.io/) challenge. The goal of the challenge is to replicate a design and build a functional web page with specific features.
 
 ### The Challenge:
 
 **To do this challenge, you need a basic understanding of HTML, CSS, and JavaScript.**
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Receive an error message when the `form` is submitted if:
-  - Any `input` field is empty. The message for this error should say _"[Field Name] cannot be empty"_
-  - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say _"Looks like this is not an email"_
+- **Insert requirements here**: Users should be able to submit a contact form.
+- **Placeholder-Text**: Form validation with error messages.
+- **Placeholder-Text**: Responsiveness across all device sizes.
 
 <br>
 
@@ -69,8 +67,8 @@ All viewports were included (except for the 4k view), in case the observer wishe
 
 ### Links:
 
-- **Live Site URL**: [View Live Site](https://mark-siazon.github.io/FM-Intro-Sign_Up-Card/)
-- **Solution URL**: [View Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/intro-sign-up-card-responsive-mobile-first-tsreactjsvitetailwind-xDHv-PZicE)
+- **Live Site URL**: [View Live Site](https://mark-siazon.github.io/__Placeholder-Text__)
+- **Solution URL**: [View Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/__Placeholder-Text__)
 
 ## My process:
 
